@@ -1,0 +1,1 @@
+$("#last_update").text("Last Update: 2014/10/27");

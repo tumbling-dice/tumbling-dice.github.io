@@ -94,7 +94,7 @@ h6 {
 }
 
 p {
-  margin: 10px 0 15px 0;
+  margin: 5px 0 8px 0;
 }
 
 footer p {
@@ -210,6 +210,14 @@ ol {
   padding-left: 20px;
 }
 
+ul ul {
+  margin-bottom: 0;
+}
+
+ol ul {
+  margin-bottom: 0;
+}
+
 dl dt {
   font-weight: bold;
 }
@@ -263,10 +271,14 @@ Full-Width Styles
 }
 
 .inner {
+  max-width: 800px;
+}
+
+section.inner {
   position: relative;
-  max-width: 640px;
   padding: 20px 10px;
-  margin: 0 auto;
+  margin-left: 15%;
+  margin-right: 2%;
 }
 
 #forkme_banner {
@@ -294,15 +306,22 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10px;
+  padding-bottom: 30px;
 }
 
 #project_title {
   margin: 0;
   color: #fff;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
+}
+
+#project_title a {
+  color: #fff;
 }
 
 #project_tagline {
@@ -356,17 +375,43 @@ Full-Width Styles
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
+  font-family:'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ÉqÉâÉMÉmäpÉS ProN W3', Meiryo, ÉÅÉCÉäÉI, sans-serif;
+  letter-spacing:0.05em;
 }
 
 #main_content {
   padding-top: 40px;
+  padding-bottom: 120px;
 }
 
 #footer_wrap {
   background: #212121;
 }
 
+#footer_wrap .inner {
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
 
+#last_update {
+  color: #999;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.note {
+  margin-left: 1em;
+  padding-left: 0.5em;
+  border-left: medium solid #ADADAD;
+}
+
+.note p {
+  margin-top:0px;
+  margin-left:0.5em;
+  margin-bottom:0px;
+}
 
 /*******************************************************************************
 Small Device Styles
