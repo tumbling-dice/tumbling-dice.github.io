@@ -214,7 +214,15 @@ ul ul {
   margin-bottom: 0;
 }
 
+ul ol {
+    margin-bottom: 0;
+}
+
 ol ul {
+  margin-bottom: 0;
+}
+
+ol ol {
   margin-bottom: 0;
 }
 

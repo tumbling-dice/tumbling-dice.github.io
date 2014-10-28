@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Tumbling-dice.github.io : ">
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css" />
+    <script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../javascripts/create-index.js"></script>
     <title>包丁で刺されるはたてちゃんアラーム マニュアル - いろいろな設定画面（MainActivity）</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
         <ol id="index">
             <li><a href="#layout">レイアウト</a></li>
             <li><a href="#guide">利用者向けガイド</a>
-                <ul>
+                <ol>
                     <li><a href="#guide-time-preference">起動時刻設定</a></li>
                     <li><a href="#guide-notify-preference">とどめをささない</a></li>
                     <li><a href="#guide-notify-detail">通知詳細設定</a></li>
@@ -34,77 +36,77 @@
                     <li><a href="#guide-preview">確認機能</a></li>
                     <li><a href="#guide-license">ライセンス</a></li>
                     <li><a href="#guide-tips">tips</a></li>
-                </ul>
+                </ol>
             </li>
             <li><a href="#summary">（開発者向け）機能概要</a></li>
             <li><a href="#source">（開発者向け）ソース</a></li>
         </ol>
 
-        <h3><a name="layout" class="anchor" href="#layout"><span class="octicon octicon-link"></span></a>
-        1.レイアウト</h3>
-        <p>TODO:stub</p>
+        <div id="layout">
+            <p>TODO:stub</p>
+        </div>
 
-        <h3><a name="guide" class="anchor" href="#guide"><span class="octicon octicon-link"></span></a>
-        2.利用者向けガイド</h3>
-            <h4><a name="guide-time-preference" class="anchor" href="#guide-time-preference"><span class="octicon octicon-link"></span></a>
-            起動時刻設定</h4>
-            <p>はたてちゃんを刺し殺す時間を設定します。</p>
-            <p>毎日その時間にとりあえず刺しに行きます。</p>
-
-            <h4><a name="guide-notify-preference" class="anchor" href="#guide-notify-preference"><span class="octicon octicon-link"></span></a>
-            とどめをささない</h4>
-            <p>とどめをささないことで悲鳴をあげさせる余裕を生みだします。</p>
-            <p>チェックが入っていると通知をOFFにすることが出来るんですが、一応殺しているのに好感度に変化がなかったりスペルカードが手に入らなかったりスペルカードガチャが出来なかったりしていますね。</p>
-            <p>普通に仕様バグなのでそのうち直ります。たぶん「とどめをささない」って文言が悪い。「慈悲を見せる」とかにしよう。</p>
+        <div id="guide">
+            <div id="guide-time-preference">
+                <p>はたてちゃんを刺し殺す時間を設定します。</p>
+                <p>毎日その時間にとりあえず刺しに行きます。</p>
+            </div>
             
-            <h4><a name="guide-notify-detail" class="anchor" href="#guide-notify-detail"><span class="octicon octicon-link"></span></a>
-            通知詳細設定</h4>
-            <p><a href="notification.html">通知詳細設定画面</a>に移動します。</p>
+            <div id="guide-notify-preference">
+                <p>とどめをささないことで悲鳴をあげさせる余裕を生みだします。</p>
+                <p>チェックが入っていると通知をOFFにすることが出来るんですが、一応殺しているのに好感度に変化がなかったりスペルカードが手に入らなかったりスペルカードガチャが出来なかったりしていますね。</p>
+                <p>普通に仕様バグなのでそのうち直ります。たぶん「とどめをささない」って文言が悪い。「慈悲を見せる」とかにしよう。</p>
+            </div>
 
-            <h4><a name="guide-spellcard-gacha" class="anchor" href="#guide-spellcard-gacha"><span class="octicon octicon-link"></span></a>
-            スペルカードガチャ</h4>
-            <p><a href="gacha.html">スペルカードガチャ画面</a>に移動します。</p>
-            <p>通知が発生するごとに一回引くことが出来ます。</p>
+            <div id="guide-notify-detail">
+                <p><a href="notification.html">通知詳細設定画面</a>に移動します。</p>
+            </div>
 
-            <h4><a name="guide-spellcard-library" class="anchor" href="#guide-spellcard-library"><span class="octicon octicon-link"></span></a>
-            スペルカード図鑑</h4>
-            <p><a href="spellcard_library.html">スペルカード図鑑画面</a>に移動します。</p>
-            <p>今までに手に入れたスペルカードをシリーズ順 or キャラクター順に眺めることが出来ます。</p>
+            <div id="guide-spellcard-gacha">
+                <p><a href="gacha.html">スペルカードガチャ画面</a>に移動します。</p>
+                <p>通知が発生するごとに一回引くことが出来ます。</p>
+            </div>
 
-            <h4><a name="guide-spellcard-history" class="anchor" href="#guide-spellcard-history"><span class="octicon octicon-link"></span></a>
-            スペルカード取得履歴一覧</h4>
-            <p><a href="spellcard_history.html">スペルカード取得履歴画面</a>に移動します。</p>
-            <p>最新20件のスペルカード取得履歴を眺めることが出来ます。</p>
+            <div id="guide-spellcard-library">
+                <p><a href="spellcard_library.html">スペルカード図鑑画面</a>に移動します。</p>
+                <p>今までに手に入れたスペルカードをシリーズ順 or キャラクター順に眺めることが出来ます。</p>
+            </div>
 
-            <h4><a name="guide-love" class="anchor" href="#guide-love"><span class="octicon octicon-link"></span></a>
-            好感度</h4>
-            <p>今まで刺した回数と現在の好感度を確認することが出来ます。</p>
+            <div id="guide-spellcard-history">
+                <p><a href="spellcard_history.html">スペルカード取得履歴画面</a>に移動します。</p>
+                <p>最新20件のスペルカード取得履歴を眺めることが出来ます。</p>
+            </div>
+
+            <div id="guide-love">
+                <p>今まで刺した回数と現在の好感度を確認することが出来ます。</p>
+            </div>
             
-            <h4><a name="guide-preview" class="anchor" href="#guide-preview"><span class="octicon octicon-link"></span></a>
-            確認機能</h4>
-            <p>現在の設定でアラームが実行されたらどうなるのか確認出来ます。</p>
-            <p>面白半分でインストールした人がこれを押して満足し、さくっとアンインストール出来るようにするためここにも置いてあります。</p>
+            <div id="guide-preview">
+                <p>現在の設定でアラームが実行されたらどうなるのか確認出来ます。</p>
+                <p>面白半分でインストールした人がこれを押して満足し、さくっとアンインストール出来るようにするためここにも置いてあります。</p>
+            </div>
 
-            <h4><a name="guide-license" class="anchor" href="#guide-license"><span class="octicon octicon-link"></span></a>
-            ライセンス</h4>
-            <p><a href="license.html">ライセンス画面</a>に移動します。</p>
+            <div id="guide-license">
+                <p><a href="license.html">ライセンス画面</a>に移動します。</p>
+            </div>
 
-            <h4><a name="guide-tips" class="anchor" href="#guide-tips"><span class="octicon octicon-link"></span></a>
-            tips</h4>
-            <p>この画面が表示された時点で一度強制的にアラームを解除します。</p>
-            <p>現状、アラームが（再）登録されるタイミングは「MainActivityでBackボタンが押された」瞬間です。</p>
-            <p>人によってはBackボタンを使わないで終了させる可能性もあるのでもうちょっといいイベントをフックしたいところではあるんですが…。</p>
+            <div id="guide-tips">
+                <p>この画面が表示された時点で一度強制的にアラームを解除します。</p>
+                <p>現状、アラームが（再）登録されるタイミングは「MainActivityでBackボタンが押された」瞬間です。</p>
+                <p>人によってはBackボタンを使わないで終了させる可能性もあるのでもうちょっといいイベントをフックしたいところではあるんですが…。</p>
+            </div>
+        </div>
 
-        <h3><a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>
-        3.（開発者向け）機能概要</h3>
-        <p>TODO:stub</p>
+        <div id="summary">
+            <p>TODO:stub</p>
+        </div>
         
-        <h3><a name="source" class="anchor" href="#source"><span class="octicon octicon-link"></span></a>
-        4.（開発者向け）ソース</h3>
-        <ul>
-            <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/MainActivity.java">MainActivity.java</a></li>
-            <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/xml/main.xml">main.xml</a></li>
-        </ul>
+        <div id="source">
+            <ul>
+                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/MainActivity.java">MainActivity.java</a></li>
+                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/xml/main.xml">main.xml</a></li>
+            </ul>
+        </div>
       </section>
     </div>
     <!-- FOOTER  -->

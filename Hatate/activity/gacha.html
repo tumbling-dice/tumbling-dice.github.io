@@ -4,7 +4,9 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Tumbling-dice.github.io : ">
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css" />
+    <script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../javascripts/create-index.js"></script>
     <title>包丁で刺されるはたてちゃんアラーム マニュアル - スペルカードガチャ画面（GachaActivity）</title>
 </head>
 <body>
@@ -19,46 +21,45 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
         <section id="main_content" class="inner">
-        <ol>
+        <ol id="index">
             <li><a href="#layout">レイアウト</a></li>
             <li><a href="#guide">利用者向けガイド</a>
-                <ul>
+                <ol>
                     <li><a href="#guide-rule">遊び方</a></li>
                     <li><a href="#guide-caution">注意</a></li>
-                </ul>
+                </ol>
             </li>
             <li><a href="#summary">（開発者向け）機能概要</a></li>
             <li><a href="#source">（開発者向け）ソース</a></li>
         </ol>
         
-        <h3><a name="layout" class="anchor" href="#layout"><span class="octicon octicon-link"></span></a>
-        1.レイアウト</h3>
-        <p>TODO:Stub</p>
+        <div id="layout">
+            <p>TODO:stub</p>
+        </div>
         
-        <h3><a name="guide" class="anchor" href="#guide"><span class="octicon octicon-link"></span></a>
-        2.利用者向けガイド</h3>
-            <h4><a name="guide-rule" class="anchor" href="#guide-rule"><span class="octicon octicon-link"></span></a>
-            遊び方</h4>
-            <p>はたてちゃんの画像をタップするだけです。何かしらのスペルカードが3枚貰えます。</p>
-            <p>1日1回…というか、1殺1回です。アラームを鳴らした瞬間にまた引けるようになります。</p>
-            
-            <h4><a name="guide-caution" class="anchor" href="#guide-caution"><span class="octicon octicon-link"></span></a>
-            注意</h4>
-            
-            <p><strong>悲鳴およびバイブ機能と連携しています。</strong></p>
-            <p>公共の場で引くときは<a href="notification.html">通知詳細設定画面</a>でOFFにしておかないと<em>ウグーーーーーーーーーーッ!!!</em>が響き渡ることでしょう。</p>
-            <p>公共の場でこんなアプリを使うなという意志がこめられています。</p>
+        <div id="guide">
+            <div id="guide-rule">
+                <p>はたてちゃんの画像をタップするだけです。何かしらのスペルカードが3枚貰えます。</p>
+                <p>1日1回…というか、1殺1回です。アラームを鳴らした瞬間にまた引けるようになります。</p>
+            </div>
+
+            <div id="guide-caution">
+                <p><strong>悲鳴およびバイブ機能と連携しています。</strong></p>
+                <p>公共の場で引くときは<a href="notification.html">通知詳細設定画面</a>でOFFにしておかないと<em>ウグーーーーーーーーーーッ!!!</em>が響き渡ることでしょう。</p>
+                <p>公共の場でこんなアプリを使うなという意志がこめられています。</p>
+            </div>
+        </div>
+
+        <div id="summary">
+            <p>TODO:stub</p>
+        </div>
         
-        <h3><a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>
-        3.（開発者向け）機能概要</h3>
-        <p>TODO:stub</p>
-        
-        <h3><a name="source" class="anchor" href="#source"><span class="octicon octicon-link"></span></a>
-        4.（開発者向け）ソース</h3>
-        <ul>
-            <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/GachaActivity.java">GachaActivity.java</a></li>
-            <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_gacha.xml">activity_gacha.xml</a></li>
-        </ul>
+        <div id="source">
+            <ul>
+                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/GachaActivity.java">GachaActivity.java</a></li>
+                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_gacha.xml">activity_gacha.xml</a></li>
+            </ul>
+        </div>
       </section>
     </div>
     <!-- FOOTER  -->

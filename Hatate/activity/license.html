@@ -4,7 +4,9 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Tumbling-dice.github.io : ">
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css" />
+    <script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../javascripts/create-index.js"></script>
     <title>包丁で刺されるはたてちゃんアラーム マニュアル - ライセンス画面（LicenseActivity）</title>
 </head>
 <body>
@@ -21,34 +23,34 @@
         <section id="main_content" class="inner">
         
         <h3>0.目次</h3>
-        <ol>
+        <ol id="index">
             <li><a href="#layout">レイアウト</a></li>
             <li><a href="#guide">利用者向けガイド</a></li>
             <li><a href="#summary">（開発者向け）機能概要</a></li>
             <li><a href="#source">（開発者向け）ソース</a></li>
         </ol>
         
-        <h3><a name="layout" class="anchor" href="#layout"><span class="octicon octicon-link"></span></a>
-        1.レイアウト</h3>
-        <p>TODO: stub</p>
+        <div id="layout">
+            <p>TODO: stub</p>
+        </div>
         
-        <h3><a name="guide" class="anchor" href="#guide"><span class="octicon octicon-link"></span></a>
-        2.利用者向けガイド</h3>
-        <p>特筆することはありません。こんなふざけたアプリである以上は筋を通したいだけです。怒られるの嫌だし。</p>
-        <p>一応URLをクリックすればそこに飛べます。それだけです。</p>
-        
-        <h3><a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>
-        3.（開発者向け）機能概要</h3>
-        <p>使用している各種ライブラリ / アイコンのライセンス、及びSpecial Thanksの掲示を行う。</p>
-        <p>表示する文言は<a href="https://github.com/tumbling-dice/Hatate">GitHub</a>及び<a href="https://play.google.com/store/apps/details?id=inujini_.hatate">Google Play</a>上に記載されている内容と同一である。各Webサイトへのリンクは<a href="http://developer.android.com/reference/android/widget/TextView.html#attr_android:autoLink">autoLink:web</a>を使用する。</p>
-        <p>また、当アプリケーションのライセンス表示もここで行う。</p>
-        
-        <h3><a name="source" class="anchor" href="#source"><span class="octicon octicon-link"></span></a>
-        4.（開発者向け）ソース</h3>
-        <ul>
-            <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/LicenseActivity.java">LicenseActivity.java</a></li>
-            <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_licence.xml">activity_licence.xml</a></li>
-        </ul>
+        <div id="guide">
+            <p>特筆することはありません。こんなふざけたアプリである以上は筋を通したいだけです。怒られるの嫌だし。</p>
+            <p>一応URLをクリックすればそこに飛べます。それだけです。</p>
+        </div>
+
+        <div id="summary">
+            <p>使用している各種ライブラリ / アイコンのライセンス、及びSpecial Thanksの掲示を行う。</p>
+            <p>表示する文言は<a href="https://github.com/tumbling-dice/Hatate">GitHub</a>及び<a href="https://play.google.com/store/apps/details?id=inujini_.hatate">Google Play</a>上に記載されている内容と同一である。各Webサイトへのリンクは<a href="http://developer.android.com/reference/android/widget/TextView.html#attr_android:autoLink">autoLink:web</a>を使用する。</p>
+            <p>また、当アプリケーションのライセンス表示もここで行う。</p>
+        </div>
+
+        <div id="source">
+            <ul>
+                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/LicenseActivity.java">LicenseActivity.java</a></li>
+                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_licence.xml">activity_licence.xml</a></li>
+            </ul>
+        </div>
         
       </section>
     </div>
