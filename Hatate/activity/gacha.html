@@ -6,7 +6,7 @@
     <meta name="description" content="Tumbling-dice.github.io : ">
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css" />
     <script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="../javascripts/create-index.js"></script>
+    <script type="text/javascript" src="../javascripts/create-index.min.js"></script>
     <title>包丁で刺されるはたてちゃんアラーム マニュアル - スペルカードガチャ画面（GachaActivity）</title>
 </head>
 <body>
@@ -20,55 +20,56 @@
     </div>
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+        <nav id="sidebar" class="inner">
+            <ol id="index">
+                <li><a href="#layout">レイアウト</a></li>
+                <li><a href="#guide">利用者向けガイド</a>
+                    <ol>
+                        <li><a href="#guide-rule">遊び方</a></li>
+                        <li><a href="#guide-caution">注意</a></li>
+                    </ol>
+                </li>
+                <li><a href="#summary">（開発者向け）機能概要</a></li>
+                <li><a href="#source">（開発者向け）ソース</a></li>
+            </ol>
+        </nav>
+
         <section id="main_content" class="inner">
-        <h3>0.目次</h3>
-        <ol id="index">
-            <li><a href="#layout">レイアウト</a></li>
-            <li><a href="#guide">利用者向けガイド</a>
-                <ol>
-                    <li><a href="#guide-rule">遊び方</a></li>
-                    <li><a href="#guide-caution">注意</a></li>
-                </ol>
-            </li>
-            <li><a href="#summary">（開発者向け）機能概要</a></li>
-            <li><a href="#source">（開発者向け）ソース</a></li>
-        </ol>
+            <div id="layout">
+                <p>TODO:stub</p>
+            </div>
         
-        <div id="layout">
-            <p>TODO:stub</p>
-        </div>
-        
-        <div id="guide">
-            <div id="guide-rule">
-                <p>はたてちゃんの画像をタップするだけです。何かしらのスペルカードが3枚貰えます。</p>
-                <p>1日1回…というか、1殺1回です。アラームを鳴らした瞬間にまた引けるようになります。</p>
+            <div id="guide">
+                <div id="guide-rule">
+                    <p>はたてちゃんの画像をタップするだけです。何かしらのスペルカードが3枚貰えます。</p>
+                    <p>1日1回…というか、1殺1回です。アラームを鳴らした瞬間にまた引けるようになります。</p>
+                </div>
+
+                <div id="guide-caution">
+                    <p><strong>悲鳴およびバイブ機能と連携しています。</strong></p>
+                    <p>公共の場で引くときは<a href="notification.html">通知詳細設定画面</a>でOFFにしておかないと<em>ウグーーーーーーーーーーッ!!!</em>が響き渡ることでしょう。</p>
+                    <p>公共の場でこんなアプリを使うなという意志がこめられています。</p>
+                </div>
             </div>
 
-            <div id="guide-caution">
-                <p><strong>悲鳴およびバイブ機能と連携しています。</strong></p>
-                <p>公共の場で引くときは<a href="notification.html">通知詳細設定画面</a>でOFFにしておかないと<em>ウグーーーーーーーーーーッ!!!</em>が響き渡ることでしょう。</p>
-                <p>公共の場でこんなアプリを使うなという意志がこめられています。</p>
+            <div id="summary">
+                <p>TODO:stub</p>
             </div>
-        </div>
-
-        <div id="summary">
-            <p>TODO:stub</p>
-        </div>
         
-        <div id="source">
-            <ul>
-                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/GachaActivity.java">GachaActivity.java</a></li>
-                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_gacha.xml">activity_gacha.xml</a></li>
-            </ul>
-        </div>
-      </section>
+            <div id="source">
+                <ul>
+                    <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/GachaActivity.java">GachaActivity.java</a></li>
+                    <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_gacha.xml">activity_gacha.xml</a></li>
+                </ul>
+            </div>
+        </section>
     </div>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
         <footer class="inner">
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
         <p id="last_update">Last Update: 2014/10/28</p>
-      </footer>
+        </footer>
     </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="description" content="Tumbling-dice.github.io : ">
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css" />
     <script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="../javascripts/create-index.js"></script>
+    <script type="text/javascript" src="../javascripts/create-index.min.js"></script>
     <title>包丁で刺されるはたてちゃんアラーム マニュアル - Twitter連携アカウント管理画面（AccountListActivity）</title>
 </head>
 <body>
@@ -20,52 +20,53 @@
     </div>
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+        <nav id="sidebar" class="inner">
+            <ol id="index">
+                <li><a href="#layout">レイアウト</a></li>
+                <li><a href="#guide">利用者向けガイド</a>
+                    <ol>
+                        <li><a href="#guide-select">アカウント選択</a></li>
+                        <li><a href="#guide-add">アカウント追加</a></li>
+                        <li><a href="#guide-delete">アカウント削除</a></li>
+                    </ol>
+                </li>
+                <li><a href="#summary">（開発者向け）機能概要</a></li>
+                <li><a href="#source">（開発者向け）ソース</a></li>
+            </ol>
+        </nav>
+        
         <section id="main_content" class="inner">
-        <h3>0.目次</h3>
-        <ol id="index">
-            <li><a href="#layout">レイアウト</a></li>
-            <li><a href="#guide">利用者向けガイド</a>
-                <ol>
-                    <li><a href="#guide-select">アカウント選択</a></li>
-                    <li><a href="#guide-add">アカウント追加</a></li>
-                    <li><a href="#guide-delete">アカウント削除</a></li>
-                </ol>
-            </li>
-            <li><a href="#summary">（開発者向け）機能概要</a></li>
-            <li><a href="#source">（開発者向け）ソース</a></li>
-        </ol>
+            <div id="layout">
+                <p>TODO:stub</p>
+            </div>
+
+            <div id="guide">
+                <div id="guide-select">
+                    <p>チェックボックスにチェックが入っているアカウントはすべてTwitter連携対象アカウントになります。</p>
+                    <p>連携対象からはずしたい場合はチェックをはずせばOKです。</p>
+                </div>
+
+                <div id="guide-add">
+                    <p>オプションメニューから「追加」を選択することで連携対象にしたいアカウントを追加することが出来ます。</p>
+                </div>
+
+                <div id="guide-delete">
+                    <p>もう使用したくないアカウントをロングタップすると削除確認ダイアログが表示されます。</p>
+                    <p>問題なければOKをクリックして削除してください。</p>
+                </div>
+            </div>
+
+            <div id="summary">
+                <p>TODO:stub</p>
+            </div>
         
-        <div id="layout">
-            <p>TODO:stub</p>
-        </div>
-
-        <div id="guide">
-            <div id="guide-select">
-                <p>チェックボックスにチェックが入っているアカウントはすべてTwitter連携対象アカウントになります。</p>
-                <p>連携対象からはずしたい場合はチェックをはずせばOKです。</p>
+            <div id="source">
+                <ul>
+                    <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/AccountListActivity.java">AccountListActivity.java</a></li>
+                    <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_list.xml">activity_list.xml</a></li>
+                </ul>
             </div>
-
-            <div id="guide-add">
-                <p>オプションメニューから「追加」を選択することで連携対象にしたいアカウントを追加することが出来ます。</p>
-            </div>
-
-            <div id="guide-delete">
-                <p>もう使用したくないアカウントをロングタップすると削除確認ダイアログが表示されます。</p>
-                <p>問題なければOKをクリックして削除してください。</p>
-            </div>
-        </div>
-
-        <div id="summary">
-            <p>TODO:stub</p>
-        </div>
-        
-        <div id="source">
-            <ul>
-                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/AccountListActivity.java">AccountListActivity.java</a></li>
-                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_list.xml">activity_list.xml</a></li>
-            </ul>
-        </div>
-      </section>
+        </section>
     </div>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">

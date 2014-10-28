@@ -6,7 +6,7 @@
     <meta name="description" content="Tumbling-dice.github.io : ">
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css" />
     <script type="text/javascript" src="../javascripts/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="../javascripts/create-index.js"></script>
+    <script type="text/javascript" src="../javascripts/create-index.min.js"></script>
     <title>包丁で刺されるはたてちゃんアラーム マニュアル - いろいろな設定画面（MainActivity）</title>
 </head>
 <body>
@@ -20,101 +20,102 @@
     </div>
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-        <section id="main_content" class="inner">
-        <h3>0.目次</h3>
-        <ol id="index">
-            <li><a href="#layout">レイアウト</a></li>
-            <li><a href="#guide">利用者向けガイド</a>
-                <ol>
-                    <li><a href="#guide-time-preference">起動時刻設定</a></li>
-                    <li><a href="#guide-notify-preference">とどめをささない</a></li>
-                    <li><a href="#guide-notify-detail">通知詳細設定</a></li>
-                    <li><a href="#guide-spellcard-gacha">スペルカードガチャ</a></li>
-                    <li><a href="#guide-spellcard-library">スペルカード図鑑</a></li>
-                    <li><a href="#guide-spellcard-history">スペルカード取得履歴一覧</a></li>
-                    <li><a href="#guide-love">好感度</a></li>
-                    <li><a href="#guide-preview">確認機能</a></li>
-                    <li><a href="#guide-license">ライセンス</a></li>
-                    <li><a href="#guide-tips">tips</a></li>
-                </ol>
-            </li>
-            <li><a href="#summary">（開発者向け）機能概要</a></li>
-            <li><a href="#source">（開発者向け）ソース</a></li>
-        </ol>
-
-        <div id="layout">
-            <p>TODO:stub</p>
-        </div>
-
-        <div id="guide">
-            <div id="guide-time-preference">
-                <p>はたてちゃんを刺し殺す時間を設定します。</p>
-                <p>毎日その時間にとりあえず刺しに行きます。</p>
-            </div>
-            
-            <div id="guide-notify-preference">
-                <p>とどめをささないことで悲鳴をあげさせる余裕を生みだします。</p>
-                <p>チェックが入っていると通知をOFFにすることが出来るんですが、一応殺しているのに好感度に変化がなかったりスペルカードが手に入らなかったりスペルカードガチャが出来なかったりしていますね。</p>
-                <p>普通に仕様バグなのでそのうち直ります。たぶん「とどめをささない」って文言が悪い。「慈悲を見せる」とかにしよう。</p>
-            </div>
-
-            <div id="guide-notify-detail">
-                <p><a href="notification.html">通知詳細設定画面</a>に移動します。</p>
-            </div>
-
-            <div id="guide-spellcard-gacha">
-                <p><a href="gacha.html">スペルカードガチャ画面</a>に移動します。</p>
-                <p>通知が発生するごとに一回引くことが出来ます。</p>
-            </div>
-
-            <div id="guide-spellcard-library">
-                <p><a href="spellcard_library.html">スペルカード図鑑画面</a>に移動します。</p>
-                <p>今までに手に入れたスペルカードをシリーズ順 or キャラクター順に眺めることが出来ます。</p>
-            </div>
-
-            <div id="guide-spellcard-history">
-                <p><a href="spellcard_history.html">スペルカード取得履歴画面</a>に移動します。</p>
-                <p>最新20件のスペルカード取得履歴を眺めることが出来ます。</p>
-            </div>
-
-            <div id="guide-love">
-                <p>今まで刺した回数と現在の好感度を確認することが出来ます。</p>
-            </div>
-            
-            <div id="guide-preview">
-                <p>現在の設定でアラームが実行されたらどうなるのか確認出来ます。</p>
-                <p>面白半分でインストールした人がこれを押して満足し、さくっとアンインストール出来るようにするためここにも置いてあります。</p>
-            </div>
-
-            <div id="guide-license">
-                <p><a href="license.html">ライセンス画面</a>に移動します。</p>
-            </div>
-
-            <div id="guide-tips">
-                <p>この画面が表示された時点で一度強制的にアラームを解除します。</p>
-                <p>現状、アラームが（再）登録されるタイミングは「MainActivityでBackボタンが押された」瞬間です。</p>
-                <p>人によってはBackボタンを使わないで終了させる可能性もあるのでもうちょっといいイベントをフックしたいところではあるんですが…。</p>
-            </div>
-        </div>
-
-        <div id="summary">
-            <p>TODO:stub</p>
-        </div>
+        <nav id="sidebar" class="inner">
+            <ol id="index">
+                <li><a href="#layout">レイアウト</a></li>
+                <li><a href="#guide">利用者向けガイド</a>
+                    <ol>
+                        <li><a href="#guide-time-preference">起動時刻設定</a></li>
+                        <li><a href="#guide-notify-preference">とどめをささない</a></li>
+                        <li><a href="#guide-notify-detail">通知詳細設定</a></li>
+                        <li><a href="#guide-spellcard-gacha">スペルカードガチャ</a></li>
+                        <li><a href="#guide-spellcard-library">スペルカード図鑑</a></li>
+                        <li><a href="#guide-spellcard-history">スペルカード取得履歴一覧</a></li>
+                        <li><a href="#guide-love">好感度</a></li>
+                        <li><a href="#guide-preview">確認機能</a></li>
+                        <li><a href="#guide-license">ライセンス</a></li>
+                        <li><a href="#guide-tips">tips</a></li>
+                    </ol>
+                </li>
+                <li><a href="#summary">（開発者向け）機能概要</a></li>
+                <li><a href="#source">（開発者向け）ソース</a></li>
+            </ol>
+        </nav>
         
-        <div id="source">
-            <ul>
-                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/MainActivity.java">MainActivity.java</a></li>
-                <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/xml/main.xml">main.xml</a></li>
-            </ul>
-        </div>
-      </section>
+        <section id="main_content" class="inner">
+            <div id="layout">
+                <p>TODO:stub</p>
+            </div>
+
+            <div id="guide">
+                <div id="guide-time-preference">
+                    <p>はたてちゃんを刺し殺す時間を設定します。</p>
+                    <p>毎日その時間にとりあえず刺しに行きます。</p>
+                </div>
+            
+                <div id="guide-notify-preference">
+                    <p>とどめをささないことで悲鳴をあげさせる余裕を生みだします。</p>
+                    <p>チェックが入っていると通知をOFFにすることが出来るんですが、一応殺しているのに好感度に変化がなかったりスペルカードが手に入らなかったりスペルカードガチャが出来なかったりしていますね。</p>
+                    <p>普通に仕様バグなのでそのうち直ります。たぶん「とどめをささない」って文言が悪い。「慈悲を見せる」とかにしよう。</p>
+                </div>
+
+                <div id="guide-notify-detail">
+                    <p><a href="notification.html">通知詳細設定画面</a>に移動します。</p>
+                </div>
+
+                <div id="guide-spellcard-gacha">
+                    <p><a href="gacha.html">スペルカードガチャ画面</a>に移動します。</p>
+                    <p>通知が発生するごとに一回引くことが出来ます。</p>
+                </div>
+
+                <div id="guide-spellcard-library">
+                    <p><a href="spellcard_library.html">スペルカード図鑑画面</a>に移動します。</p>
+                    <p>今までに手に入れたスペルカードをシリーズ順 or キャラクター順に眺めることが出来ます。</p>
+                </div>
+
+                <div id="guide-spellcard-history">
+                    <p><a href="spellcard_history.html">スペルカード取得履歴画面</a>に移動します。</p>
+                    <p>最新20件のスペルカード取得履歴を眺めることが出来ます。</p>
+                </div>
+
+                <div id="guide-love">
+                    <p>今まで刺した回数と現在の好感度を確認することが出来ます。</p>
+                </div>
+            
+                <div id="guide-preview">
+                    <p>現在の設定でアラームが実行されたらどうなるのか確認出来ます。</p>
+                    <p>面白半分でインストールした人がこれを押して満足し、さくっとアンインストール出来るようにするためここにも置いてあります。</p>
+                </div>
+
+                <div id="guide-license">
+                    <p><a href="license.html">ライセンス画面</a>に移動します。</p>
+                </div>
+
+                <div id="guide-tips">
+                    <p>この画面が表示された時点で一度強制的にアラームを解除します。</p>
+                    <p>現状、アラームが（再）登録されるタイミングは「MainActivityでBackボタンが押された」瞬間です。</p>
+                    <p>人によってはBackボタンを使わないで終了させる可能性もあるのでもうちょっといいイベントをフックしたいところではあるんですが…。</p>
+                </div>
+            </div>
+
+            <div id="summary">
+                <p>TODO:stub</p>
+            </div>
+        
+            <div id="source">
+                <ul>
+                    <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/MainActivity.java">MainActivity.java</a></li>
+                    <li><a href="https://github.com/tumbling-dice/Hatate/blob/master/res/xml/main.xml">main.xml</a></li>
+                </ul>
+            </div>
+        </section>
     </div>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
         <footer class="inner">
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
         <p id="last_update">Last Update: 2014/10/28</p>
-      </footer>
+        </footer>
     </div>
 </body>
 </html>

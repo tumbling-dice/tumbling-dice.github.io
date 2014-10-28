@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     var $index = $("#index").children();
     if ($index.length == 0) return;
-    var $span = $("<span>").attr({ class: "octicon octicon-link" });
+    var $span = $("<span>").addClass("octicon octicon-link");
 
     var add = function (i, $li, i2) {
         var $a = $li.find("a").first();
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
         var name = href.replace("#", "");
 
-        var $anchor = $("<a>").attr({ name: name, class: "anchor", href: href });
+        var $anchor = $("<a>").attr({ name: name, href: href }).addClass("anchor");
         $anchor.add($span);
 
         $h.add($anchor).text(title);
