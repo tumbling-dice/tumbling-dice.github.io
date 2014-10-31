@@ -377,12 +377,25 @@ Full-Width Styles
     padding-top: 40px;
     padding-bottom: 120px;
     display: table;
+    width: 100%;
+}
+
+#sidebar
+{
+    font-size: 14px;
+    display: table-cell;
+    table-layout:fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+    width:300px;
 }
 
 #main_content
 {
     display:table-cell;
-    padding: 0px 10px 20px 10px;
+    padding: 0px 5em 20px 10px;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 #footer_wrap
@@ -419,11 +432,7 @@ Full-Width Styles
     margin-bottom: 0px;
 }
 
-#sidebar
-{
-    font-size: 14px;
-    display:table-cell;
-}
+
 
 /*******************************************************************************
 Downloads
