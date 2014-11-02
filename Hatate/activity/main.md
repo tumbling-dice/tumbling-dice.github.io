@@ -12,8 +12,9 @@
     6. [スペルカード取得履歴一覧](#guide-spellcard-history)
     7. [好感度](#guide-love)
     8. [確認機能](#guide-preview)
-    9. [ライセンス](#guide-license)
-    10. [tips](#guide-tips)
+    9. [オンラインマニュアル](#guide-online-manual)
+    10. [ライセンス](#guide-license)
+    11. [tips](#guide-tips)
 3. [（開発者向け）機能概要](#summary)
 4. [（開発者向け）ソース](#source)
 </index>
@@ -62,6 +63,8 @@
 
 面白半分でインストールした人がこれを押して満足し、さくっとアンインストール出来るようにするためここにも置いてあります。
 
+###guide-online-manual
+[このマニュアル](../)を見ることができます。
 
 ###guide-license
 [ライセンス画面](index.html?md=license)に移動します。

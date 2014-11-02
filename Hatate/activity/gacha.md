@@ -11,7 +11,7 @@
 </index>
 
 ##layout
-TODO:stub
+[![ss-gacha-0](./images/ss-gacha-0.png)](./images/ss-gacha-0.png)
 
 ##guide
 ###guide-rule
