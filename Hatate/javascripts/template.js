@@ -53,9 +53,14 @@ $(document).ready(function () {
                 indexes[href] = text;
             }
 
-            title = title ? title : text;
+            var out = "<a href=\"" + href + " \"";
+            if(title) {
+                out += " title=\"" + title + "\"";
+            }
+            
+            out += ">" + text + "</a>"
 
-            return "<a href=\"" + href + "\" title=\"" + title + "\">" + text + "</a>";
+            return out;
         };
 
         var projectTagline;

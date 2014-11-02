@@ -19,7 +19,8 @@
 </index>
 
 ##layout
-TODO:stub
+[![ss-notification-0](./images/ss-notification-0.png)](./images/ss-notification-0.png)
+[![ss-notification-1](./images/ss-notification-1.png)](./images/ss-notification-1.png)
 
 ##guide
 ###guide-snooze

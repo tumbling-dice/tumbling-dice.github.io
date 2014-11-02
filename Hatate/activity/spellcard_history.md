@@ -1,4 +1,3 @@
-[LastUpdate](2014/10/30)
 #スペルカード取得履歴画面（SpellCardHistoryActivity）
 
 <index>
@@ -9,13 +8,19 @@
 </index>
 
 ##layout
-TODO:stub
+[![ss-spellcard-history-0](./images/ss-spellcard-history-0.png)](./images/ss-spellcard-history-0.png)
 
 ##guide
-TODO:stub
+最近取得したスペルカードを見ることが出来ます。
+
+最新20件まで見ることが可能です。
 
 ##summary
 TODO:stub
 
 ##source
-TODO:stub
+* [SpellCardHistoryActivity.java](https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/SpellCardHistoryActivity.java)
+* [activity_list.xml](https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_list.xml)
+* [adapter_spellcard_history.xml](https://github.com/tumbling-dice/Hatate/blob/master/res/layout/adapter_spellcard_history.xml)
+
+[LastUpdate](2014/11/02)

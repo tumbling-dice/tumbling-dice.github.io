@@ -19,8 +19,8 @@
 </index>
 
 ##layout
-TODO:stub
-
+[![ss-main-0](./images/ss-main-0.png)](./images/ss-main-0.png)
+[![ss-main-1](./images/ss-main-1.png)](./images/ss-main-1.png)
 
 ##guide
 ###guide-time-preference

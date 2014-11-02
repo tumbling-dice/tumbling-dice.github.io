@@ -9,7 +9,8 @@
 </index>
 
 ##layout
-TODO:stub
+[![ss-license-0](./images/ss-license-0.png)](./images/ss-license-0.png)
+[![ss-license-1](./images/ss-license-1.png)](./images/ss-license-1.png)
 
 ##guide
 特筆することはありません。こんなふざけたアプリである以上は筋を通したいだけです。怒られるの嫌だし。

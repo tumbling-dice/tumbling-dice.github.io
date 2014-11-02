@@ -1,4 +1,3 @@
-[LastUpdate](2014/10/30)
 #Twitter連携アカウント管理画面（AccountListActivity）
 
 <index>
@@ -12,7 +11,7 @@
 </index>
 
 ##layout
-TODO:stub
+[![ss-account-list-0](./images/ss-account-list-0.png)](./images/ss-account-list-0.png)
 
 ##guide
 
@@ -35,3 +34,7 @@ TODO:stub
 ##source
 * [AccountListActivity.java](https://github.com/tumbling-dice/Hatate/blob/master/src/inujini_/hatate/AccountListActivity.java)
 * [activity_list.xml](https://github.com/tumbling-dice/Hatate/blob/master/res/layout/activity_list.xml)
+* [adapter_account_list.xml](https://github.com/tumbling-dice/Hatate/blob/master/res/layout/adapter_account_list.xml)
+* [menu_account_list.xml](https://github.com/tumbling-dice/Hatate/blob/master/res/menu/menu_account_list.xml)
+
+[LastUpdate](2014/11/02)

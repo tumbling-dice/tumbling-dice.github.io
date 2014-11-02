@@ -398,6 +398,12 @@ Full-Width Styles
     word-wrap: break-word;
 }
 
+#main_content img
+{
+    width: 180px;
+    height: 320px;
+}
+
 #footer_wrap
 {
     background: #212121;
