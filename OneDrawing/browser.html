@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Tumbling-dice.github.io : ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        
+    </style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="./js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="./js/knockout-3.2.0.js"></script>
+    <title>One Drawing Browser</title>
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="controller">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">One Drawing Browser</span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" data-bind="value: word">
+            </div>
+            <button type="submit" class="btn btn-default" data-bind="click: search" >
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- MAIN CONTENT -->
+    <div id="main_content" class="container">
+        <div class="page-header">
+            <h1>Image Stream</h1>
+        </div>
+        <div class="table" data-bind="foreach: tweets">
+            <div class="row">
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" class="text-center">
+                    <a data-bind="attr: { href: user_profile }" target="_blank">
+                        <img data-bind="attr: { src: user_icon }" class="img-rounded" />
+                    </a>
+                </div>
+                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 text-center">
+                    <a data-bind="attr: { href: image }" target="_blank">
+                        <img data-bind="attr: { src: image}" class="img-responsive img-thumbnail"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/oauth.js"></script>
+    <script type="text/javascript" src="./js/sha1.js"></script>
+    <script type="text/javascript" src="./js/twitter.js"></script>
+    <script type="text/javascript">
+        (function() {
+            /*var twitter = new Twitter();
+            if(!twitter.isOauthed()) {
+                location.href = "index.html";
+                return;
+            }*/
+            
+            var vm = {
+                // controller
+                word: ko.observable("一本勝負"),
+                search: function() {
+                    alert(this.word());
+                },
+                
+                // content
+                tweets: ko.observableArray([{
+                    screen_name: "",
+                    status_id: 0,
+                    user_profile: "http://api.jquery.com/jQuery.ajax/",
+                    image: "https://d3oaxc4q5k2d6q.cloudfront.net/m/5fe8c0346b2d/img/language-avatars/c_sharp_128.png",
+                    user_icon: "https://pbs.twimg.com/profile_images/491159192934174720/PtVCnGB3_normal.png"
+                },{
+                    screen_name: "",
+                    status_id: 0,
+                    user_profile: "http://api.jquery.com/jQuery.ajax/",
+                    image: "https://d3oaxc4q5k2d6q.cloudfront.net/m/5fe8c0346b2d/img/language-avatars/c_sharp_128.png",
+                    user_icon: "https://pbs.twimg.com/profile_images/491159192934174720/PtVCnGB3_normal.png"
+                }]),
+                retweet: function() {
+                    ;
+                },
+                fav: function() {
+                    ;
+                },
+                unretweet: function() {
+                    ;
+                },
+                unfav: function() {
+                    ;
+                }
+            };
+            
+            ko.applyBindings(vm);
+        })();
+    </script>
+</body>
+</html>

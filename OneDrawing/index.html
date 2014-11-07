@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Tumbling-dice.github.io : ">
+    <title>One Drawing Browser - authorize</title>
+</head>
+<body>
+<p id="error"></p>
+
+<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js/oauth.js"></script>
+<script type="text/javascript" src="./js/sha1.js"></script>
+<script type="text/javascript" src="./js/twitter.js"></script>
+<script type="text/javascript">
+    (function(){
+        var hasLocalStorage = function() {
+            var lsTest = "t";
+            try {
+                localStorage.setItem(lsTest, lsTest);
+                localStorage.removeItem(lsTest);
+                return true;
+            } catch(e) {
+                return false;
+            }
+        };
+        
+        if(!hasLocalStorage()) {
+            $("#error").text("このブラウザはサポートしてないから帰って。");
+            return;
+        }
+        
+        var t = new Twitter();
+        if(t.isOauthed()){
+            //TODO: redirect
+            
+            return;
+        }
+        
+        var query = location.search;
+        
+        if(query == null) {
+            t.oauth();
+        } else {
+            t.setAccessToken(query);
+        }
+    })();
+</script>
+</body>
+</html>
