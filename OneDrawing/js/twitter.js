@@ -6,8 +6,8 @@ jQuery.support.cors = true;
 
 function Twitter(){}
 Twitter.prototype = {
-	consumerKey: "",
-	consumerSecret: "",
+	consumerKey: "G1MqkE8nhFxtiLPxCp71on0YV",
+	consumerSecret: "FT2MLtQKYZZTjx7W9AUSGwZolPH8wVQlFpn6zumHkLumjLMO65",
 	accessToken: "",
 	tokenSecret: ""
 }
@@ -65,8 +65,18 @@ Twitter.prototype.oauth = function() {
 	$.ajax(options);
 };
 
-Twitter.prototype.setAccessToken = function(query) {
+Twitter.prototype.setAccessToken = function(query, callback) {
 	
+	queryItems = query.substr(1, query.length).split("&");
 	
+	for (var i = 0, length = queryItems.length; i < length; i++) {
+        var item = queryItems[i].split("=");
+        var key = item[0];
+        var value item[1]
+        
+        alert("key:"+key+" value:" + value);
+        
+    }
 	
+	//callback();
 } 
