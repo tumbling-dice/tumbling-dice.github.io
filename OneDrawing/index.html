@@ -40,7 +40,7 @@
         
         var query = location.search;
         
-        if(query == null) {
+        if(query == "") {
             t.oauth();
         } else {
             t.setAccessToken(query, function(){
