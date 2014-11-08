@@ -72,7 +72,7 @@ Twitter.prototype.setAccessToken = function(query, callback) {
 	for (var i = 0, length = queryItems.length; i < length; i++) {
         var item = queryItems[i].split("=");
         var key = item[0];
-        var value item[1]
+        var value = item[1]
         
         alert("key:"+key+" value:" + value);
         
