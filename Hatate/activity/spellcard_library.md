@@ -17,6 +17,8 @@
 ##guide
 今までに手に入れたスペルカードを眺めることが出来ます。
 
+現在1枚も所持していないキャラクター、シリーズのものは見ることが出来ません。
+
 ###guide-character-sort
 スペルカードをキャラクター順に並べます。
 
@@ -38,4 +40,4 @@ TODO:stub
 * [adapter_spellcard_library_parent.xml](https://github.com/tumbling-dice/Hatate/blob/master/res/layout/adapter_spellcard_library_parent.xml)
 * [adapter_spellcard_library_child.xml](https://github.com/tumbling-dice/Hatate/blob/master/res/layout/adapter_spellcard_library_child.xml)
 
-[LastUpdate](2014/11/02)
+[LastUpdate](2014/11/10)
