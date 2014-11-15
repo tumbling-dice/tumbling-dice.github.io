@@ -5,6 +5,7 @@
 2. [HATATEのSubscribe](#yo-subscribe)
 3. [Yoの受信](#yo-receive)
 4. [Yoの送信](#yo-send)
+5. [Yo APIの制約](#yo-api-imitation)
 </index>
 
 ##yo-install
@@ -35,5 +36,15 @@ HATATEをSubscribeしておくと誰かがはたてちゃんを包丁で刺し�
 通知詳細設定のYoにチェックボックスを入れておけばはたテロに参加することが出来ます。
 
 [![ss-yo-0](./images/ss-yo-0.png)](./images/ss-yo-0.png)
+
+**Yoをインストールしていなくても実行可能です。**
+
+##yo-api-imitation
+
+YoのAPIとして「あるアカウントをSubscribeしているユーザすべてにYoを送信する」と言うものがあります。
+
+はたテロはこのAPIを使用しています。
+
+が、このAPIは1分間に1回しか使用できません。つまり、誰かが同時刻にアラームをセットしていた場合、**最初の一人分のYoのみが送信されます。**
 
 [LastUpdate](2014/11/16)
