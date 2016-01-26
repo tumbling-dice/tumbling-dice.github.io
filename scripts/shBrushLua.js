@@ -37,6 +37,7 @@
 			{ regex: new RegExp('--\\[\\[[\\s\\S]*\\]\\]--', 'gmi'),			css: 'comments' },
 			{ regex: new RegExp('--[^\\[]{2}.*$', 'gmi'),						css: 'comments' },
 			{ regex: SyntaxHighlighter.regexLib.multiLineDoubleQuotedString,	css: 'string' },
+			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,	css: 'string' },
 			{ regex: new RegExp(this.getKeywords(funcs), 'gmi'),				css: 'functions bold' },
 			{ regex: new RegExp(this.getKeywords(keywords), 'gmi'),				css: 'keyword bold' }
 		];
